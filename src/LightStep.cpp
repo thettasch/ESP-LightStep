@@ -98,7 +98,7 @@ void LightStep::startAsService(void)
 	disableCore1WDT(); // we have to disable the Watchdog timer to prevent it from rebooting the ESP all the time another option would be to add a vTaskDelay but it would slow down the stepper
 	xTaskCreatePinnedToCore(
 			LightStep::taskRunner, /* Task function. */
-			"FlexyStepper",               /* String with name of task (by default max 16 characters long) */
+			"LighStep",                   /* String with name of task (by default max 16 characters long) */
 			2000,                         /* Stack size in bytes. */
 			this,                         /* Parameter passed as input of the task */
 			1,                            /* Priority of the task, 1 seems to work just fine for us */
