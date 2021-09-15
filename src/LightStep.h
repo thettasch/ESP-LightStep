@@ -65,7 +65,7 @@ public:
 
 	//IO setup and helper / debugging functions
 	void connectToPins(byte stepPinNumber, byte directionPinNumber=255);
-	void setBrakePin(byte brakePin, byte activeState = ESP_FlexyStepper::ACTIVE_HIGH);
+	void setBrakePin(byte brakePin, byte activeState = LightStep::ACTIVE_HIGH);
 	long getTaskStackHighWaterMark(void);
 	void clearLimitSwitchActive(void);
 	bool motionComplete();
