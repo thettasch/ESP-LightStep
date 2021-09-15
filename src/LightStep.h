@@ -53,11 +53,11 @@
 typedef void (*callbackFunction)(void);
 typedef void (*positionCallbackFunction)(long);
 
-class ESP_FlexyStepper
+class LightStep
 {
 public:
-	ESP_FlexyStepper();
-	~ESP_FlexyStepper();
+	LightStep();
+	~LightStep();
 	//service functions
 	void startAsService(void);
 	void stopService(void);
